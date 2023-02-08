@@ -1,0 +1,79 @@
+.projects-list {
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  &__item {
+    border: solid #eeeeee 1px;
+    width: 370px;
+  }
+
+  &__item:hover {
+    box-shadow: $shadow;
+    transition: $trans;
+  }
+
+  &__item:focus {
+    box-shadow: $shadow;
+    transition: $trans;
+  }
+
+  &__figure {
+    cursor: pointer;
+  }
+
+  &__title {
+    color: $main-color;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2em;
+    letter-spacing: 0.06em;
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  &__subtitle {
+    color: $secondary-color;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    padding-top: 4px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+  }
+
+  &__item:hover .pco__text {
+    transform: translateY(-100%);
+    transition: $trans;
+  }
+}
+.pco {
+  position: relative;
+  overflow: hidden;
+
+  &__img {
+    display: block;
+  }
+
+  &__text {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: $trans;
+    background-color: $higlight;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    color: $contrast-color;
+    padding-top: 49px;
+    padding-left: 24px;
+    padding-right: 45px;
+    padding-bottom: 49px;
+    font-weight: 400;
+    line-height: 1.55em;
+  }
+}

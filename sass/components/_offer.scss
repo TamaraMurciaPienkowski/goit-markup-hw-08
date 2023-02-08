@@ -1,0 +1,36 @@
+.offer {
+  color: $main-color;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.172;
+  letter-spacing: 0.03em;
+  margin-left: 424px;
+  margin-bottom: 50px;
+}
+
+.offer-list {
+  list-style-type: none;
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+
+  &__item {
+    display: inline;
+  }
+
+  &__title {
+    position: relative;
+    bottom: 74px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(47, 48, 58, 0.8);
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+}

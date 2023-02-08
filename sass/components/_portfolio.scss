@@ -1,0 +1,42 @@
+.portfolio {
+  padding-left: 15px;
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+    gap: 8px;
+    margin-left: 295px;
+    margin-right: 303px;
+    margin-bottom: 50px;
+  }
+
+  &__button {
+    background-color: #eeeeee;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    border: #eeeeee;
+    border-radius: 4px;
+    width: 121px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    box-shadow: $shadow;
+  }
+
+  &__button:hover {
+    background-color: $higlight;
+    color: $contrast-color;
+    box-shadow: $shadow;
+    transition: $trans;
+  }
+
+  &__button:focus {
+    background-color: $higlight;
+    color: $contrast-color;
+    box-shadow: $shadow;
+    transition: $trans;
+  }
+}

@@ -1,0 +1,96 @@
+.footnote {
+  background-color: $background-dark;
+  padding-top: 60px;
+  padding-left: 15px;
+  padding-bottom: 60px;
+  &-organizer {
+    display: flex;
+  }
+}
+.fleft {
+  margin-bottom: 20px;
+  margin-right: 70px;
+}
+
+.fleft__contacts {
+  display: block;
+}
+
+.fleft-list {
+  list-style: none;
+  text-decoration: none;
+  &__text {
+    margin-top: 9px;
+    margin-bottom: 9px;
+    color: $contrast-color;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+  }
+  &__item {
+    margin-top: 9px;
+    margin-bottom: 9px;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+  }
+
+  &__item:hover {
+    color: $higlight;
+    transition: $trans;
+  }
+
+  &__item:focus {
+    color: $higlight;
+    transition: $trans;
+  }
+}
+.fmiddle {
+  padding-top: 12px;
+  margin-right: 78px;
+  &__title {
+    color: $contrast-color;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16.41px;
+    text-transform: uppercase;
+    letter-spacing: 00.03em;
+    margin-bottom: 20px;
+  }
+}
+.fmiddle-list {
+  list-style-type: none;
+  display: flex;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.newsletter {
+  display: flex;
+  margin-top: 13px;
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    background-color: $background-dark;
+    color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    width: 358px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    margin-top: 20px;
+    margin-right: 12px;
+    outline: none;
+  }
+}
