@@ -1,0 +1,12 @@
+.container {
+  margin: 0 auto;
+  @include mq(phone) {
+    width: 448px;
+    @include mq(tablet) {
+      width: 720px;
+      @include mq(desktop) {
+        width: 1200px;
+      }
+    }
+  }
+}

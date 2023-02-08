@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="pl">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Studio" />
     <title>Studio</title>
     <link
       rel="stylesheet"
@@ -19,7 +23,7 @@
   </head>
   <body>
     <!-- header -->
-    <header class="header-border">
+    <header class="header-border container">
       <nav class="main-nav">
         <a class="logo" href="index.html"
           ><span class="logo logo--blue">Web</span><span>Studio</span></a
@@ -48,6 +52,23 @@
           <a class="contact-links__link" href="tel:+48111111111">+48 111 111 111</a>
         </li>
       </ul>
+      <!-- burger button -->
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg
+          width="24"
+          height="24"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <!-- burger button end -->
     </header>
 
     <!-- header end -->
@@ -56,15 +77,15 @@
 
     <main>
       <!-- main title -->
-      <section class="main-title section">
-        <div class="container">
+      <section class="main-title section container">
+        <div>
           <h1 class="main-title__slogan">efektywne rozwiązania dla waszego biznesu</h1>
           <button data-modal-open type="button" class="main-button">Zamów usługę</button>
         </div>
       </section>
       <!-- advantages -->
-      <section class="section">
-        <div class="container">
+      <section class="section container">
+        <div>
           <ul class="adventages">
             <li class="adventages-item">
               <svg class="adventages-item__icon">
@@ -113,28 +134,31 @@
           <h2 class="offer">Czym się zajmujemy</h2>
           <ul class="offer-list">
             <li class="offer-list__item">
+              <!-- 1 card -->
               <img
                 width="370px"
                 height="294px"
-                src="images/boxone.jpg"
+                src="images/advantages/boxone.jpg"
                 alt="photo of a person typing on a keyboard"
               />
               <h3 class="offer-list__title">Aplikacje komputerowe</h3>
             </li>
+            <!-- card 2 -->
             <li class="offer-list__item">
               <img
                 width="370px"
                 height="294px"
-                src="images/boxtwo.jpg"
+                src="images/advantages/boxtwo.jpg"
                 alt="a person holding a mobile phone and searching for mobile phones on a laptop"
               />
               <h3 class="offer-list__title">Aplikacje mobilne</h3>
             </li>
+            <!-- card 3 -->
             <li class="offer-list__item">
               <img
                 width="370px"
                 height="294px"
-                src="images/boxthree.jpg"
+                src="images/advantages/boxthree.jpg"
                 alt="a person choosing colors on a tablet"
               />
               <h3 class="offer-list__title">Rozwiązania graficzne</h3>
@@ -145,19 +169,29 @@
 
       <!-- our team -->
 
-      <section class="team section">
-        <div class="container">
+      <section class="team section container">
+        <div>
           <h2 class="team__title">Nasz zespół</h2>
           <ul class="team-list">
             <!-- 1 Card -->
             <li class="team-list__item">
               <figure>
                 <img
-                  width="270px"
-                  height="260px"
-                  src="images/imgteamcardone.jpg"
-                  alt="John Doe's picture"
+                  class="photo-people__img"
+                  src="images/team/teammember1desk@1x.jpg"
+                  alt="John Doe"
+                  srcset="
+                    images/team/teammember1desk@1x.jpg 270w,
+                    images/team/teammember1desk@2x.jpg 540w,
+                    images/team/teammember1tab@1x.jpg  354w,
+                    images/team/teammember1tab@2x.jpg  708w,
+                    images/team/teammember1mob@1x.jpg  450w,
+                    images/team/teammember1mob@2x.jpg  900w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 320px) 450px, 98vw"
                 />
+                <!-- width="270"
+                height="260" -->
                 <figcaption>
                   <h3 class="team-list__item-name">John Doe</h3>
                   <span class="team-list__item-role">Product Designer</span>
@@ -190,11 +224,21 @@
             <li class="team-list__item">
               <figure>
                 <img
-                  width="270px"
-                  height="260px"
-                  src="images/imgteamcardtwo.jpg"
-                  alt="John Doe's picture"
+                  class="photo-people__img"
+                  src="images/team/teammember2desk@1x.jpg"
+                  alt="John Doe"
+                  srcset="
+                    images/team/teammember2desk@1x.jpg 270w,
+                    images/team/teammember2desk@2x.jpg 540w,
+                    images/team/teammember2tab@1x.jpg  354w,
+                    images/team/teammember2tab@2x.jpg  708w,
+                    images/team/teammember2mob@1x.jpg  450w,
+                    images/team/teammember2mob@2x.jpg  900w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 320px) 450px, 98vw"
                 />
+                <!-- width="270"
+                height="260" -->
                 <figcaption>
                   <h3 class="team-list__item-name">John Doe</h3>
                   <span class="team-list__item-role">Product Designer</span>
@@ -227,11 +271,21 @@
             <li class="team-list__item">
               <figure>
                 <img
-                  width="270px"
-                  height="260px"
-                  src="images/imgteamcardthree.jpg"
-                  alt="John Doe's picture"
+                  class="photo-people__img"
+                  src="images/team/teammember3desk@1x.jpg"
+                  alt="John Doe"
+                  srcset="
+                    images/team/teammember3desk@1x.jpg 270w,
+                    images/team/teammember3desk@2x.jpg 540w,
+                    images/team/teammember3tab@1x.jpg  354w,
+                    images/team/teammember3tab@2x.jpg  708w,
+                    images/team/teammember3mob@1x.jpg  450w,
+                    images/team/teammember3mob@2x.jpg  900w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 320px) 450px, 98vw"
                 />
+                <!-- width="270"
+                height="260" -->
                 <figcaption>
                   <h3 class="team-list__item-name">John Doe</h3>
                   <span class="team-list__item-role">Product Designer</span>
@@ -264,11 +318,21 @@
             <li class="team-list__item">
               <figure>
                 <img
-                  width="270px"
-                  height="260px"
-                  src="images/imgteamcardfour.jpg"
-                  alt="John Doe's picture"
+                  class="photo-people__img"
+                  src="images/team/teammember4desk@1x.jpg"
+                  alt="John Doe"
+                  srcset="
+                    images/team/teammember4desk@1x.jpg 270w,
+                    images/team/teammember4desk@2x.jpg 540w,
+                    images/team/teammember4tab@1x.jpg  354w,
+                    images/team/teammember4tab@2x.jpg  708w,
+                    images/team/teammember4mob@1x.jpg  450w,
+                    images/team/teammember4mob@2x.jpg  900w
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 320px) 450px, 98vw"
                 />
+                <!-- width="270"
+                height="260" -->
                 <figcaption>
                   <h3 class="team-list__item-name">John Doe</h3>
                   <span class="team-list__item-role">Product Designer</span>
@@ -303,8 +367,8 @@
     </main>
     <!-- our team end -->
     <!-- our clients -->
-    <section class="section">
-      <div class="container">
+    <section class="section container">
+      <div>
         <h2 class="clients-title">Nasi klienci</h2>
         <ul class="clients-list">
           <!-- client 1 -->
@@ -346,8 +410,8 @@
       </div>
     </section>
     <!-- footer -->
-    <footer class="footnote">
-      <div class="container footnote-organizer">
+    <footer class="footnote container">
+      <div class="footnote-organizer">
         <div class="fleft">
           <a class="logo logo--blue" href="index.html"
             ><span>Web</span><span class="logo logo--white">Studio</span>
@@ -470,6 +534,68 @@
       </div>
     </div>
     <!-- end of modal and backdrop -->
+    <!-- mobile menu-->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <nav>
+        <ul class="mobile-list">
+          <li>
+            <a class="mobile-list__link" href="index.html">Agencja</a>
+          </li>
+          <li>
+            <a class="mobile-list__link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li>
+            <a class="mobile-list__link" href="index.html">Kontakt</a>
+          </li>
+        </ul>
+        <ul class="mobile-contact">
+          <li>
+            <a class="mobile-contact__tel" href="tel:+48111111111">+48111111111</a>
+          </li>
+          <li>
+            <a class="mobile-contact__mail" href="mailto:info@S.com">info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="mobile-socials">
+          <li>
+            <a class="mobile-socials__item mobile-socials__item--left" href="">Instagram</a>
+          </li>
+          <li>
+            <a class="mobile-socials__item" href="">Twitter</a>
+          </li>
+          <li>
+            <a class="mobile-socials__item" href="">Facebook</a>
+          </li>
+          <li>
+            <a class="mobile-socials__item mobile-socials__item--right" href="">LinkedIn</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- end of mobile menu -->
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
