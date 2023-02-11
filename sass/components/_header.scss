@@ -3,97 +3,110 @@
   border-color: #ececec;
   border-width: 1px;
   display: flex;
-  padding-top: 24px;
-  padding-left: 215px;
+  padding-top: 16px;
+  padding-left: 15px;
   margin-bottom: 0px;
 }
-
-.main-nav {
-  display: flex;
-
-  &__links {
-    list-style-type: none;
-    display: flex;
-    gap: 46px;
-    padding-top: 8px;
-    margin-left: 93px;
-    margin-right: 317px;
-  }
-
-  &__link {
-    color: $main-color;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.172;
-    letter-spacing: 0.02em;
-  }
-
-  &__link:hover {
-    color: $higlight;
-    transition: $trans;
-  }
-
-  &__link:focus {
-    color: $higlight;
-    transition: $trans;
-  }
-
-  &__link--active {
-    color: $higlight;
-  }
-
-  &__link--active::after {
-    content: '';
-    display: flex;
-    margin-top: 28px;
-    background-color: $higlight;
-    height: 4px;
-    border-radius: 2px;
-  }
+.main-nav__links {
+  display: none;
 }
 .contact-links {
-  display: flex;
-  list-style-type: none;
-  padding-right: 227px;
-  padding-top: 8px;
-  padding-bottom: 7px;
-  list-style-type: none;
-  gap: 30px;
-
-  &__link {
-    color: $secondary-color;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.172;
-    letter-spacing: 0.02em;
-    vertical-align: middle;
-    cursor: pointer;
-    fill: $secondary-color;
-    margin: 0px;
-  }
-  &__icon {
-    fill: $secondary-color;
-    margin: 0px;
+  display: none;
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 1200px) {
+  .header-border {
+    padding-top: 24px;
   }
 
-  &__item:hover &__link {
-    color: $higlight;
-    transition: $trans;
-  }
-  &__item:hover &__icon {
-    fill: $higlight;
-    transition: $trans;
-  }
+  .main-nav {
+    display: flex;
 
-  &__item:focus &__link {
-    color: $higlight;
-    transition: $trans;
-    fill: $higlight;
+    &__links {
+      list-style-type: none;
+      display: flex;
+      gap: 46px;
+      padding-top: 8px;
+      margin-left: 93px;
+      margin-right: 317px;
+    }
+
+    &__link {
+      color: $main-color;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.172;
+      letter-spacing: 0.02em;
+    }
+
+    &__link:hover {
+      color: $higlight;
+      transition: $trans;
+    }
+
+    &__link:focus {
+      color: $higlight;
+      transition: $trans;
+    }
+
+    &__link--active {
+      color: $higlight;
+    }
+
+    &__link--active::after {
+      content: '';
+      display: flex;
+      margin-top: 28px;
+      background-color: $higlight;
+      height: 4px;
+      border-radius: 2px;
+    }
   }
-  &__item:focus &__icon {
-    transition: $trans;
-    fill: $higlight;
+  .contact-links {
+    display: flex;
+    list-style-type: none;
+    padding-right: 27px;
+    padding-top: 8px;
+    padding-bottom: 7px;
+    list-style-type: none;
+    gap: 30px;
+
+    &__link {
+      color: $secondary-color;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.172;
+      letter-spacing: 0.02em;
+      vertical-align: middle;
+      cursor: pointer;
+      fill: $secondary-color;
+      margin: 0px;
+    }
+    &__icon {
+      fill: $secondary-color;
+      margin: 0px;
+    }
+
+    &__item:hover &__link {
+      color: $higlight;
+      transition: $trans;
+    }
+    &__item:hover &__icon {
+      fill: $higlight;
+      transition: $trans;
+    }
+
+    &__item:focus &__link {
+      color: $higlight;
+      transition: $trans;
+      fill: $higlight;
+    }
+    &__item:focus &__icon {
+      transition: $trans;
+      fill: $higlight;
+    }
   }
 }

@@ -1,29 +1,35 @@
+.clients {
+  max-width: 480px;
+  margin-bottom: 30px;
+}
 .clients-title {
+  text-align: center;
   color: $main-color;
   text-decoration: none;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.172;
+  font-size: 28px;
+  line-height: calc (28px / 32.81px);
   letter-spacing: 0.03em;
-  margin-left: 495px;
-  margin-bottom: 50px;
 }
 
 .clients-list {
   list-style-type: none;
   display: flex;
-  gap: 30px;
-
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
+  justify-content: space-evenly;
   &__logo {
     fill: $icons-fill;
-    width: 170px;
-    height: 90px;
+    width: 210px;
+    height: 92px;
     border: solid 1px $icons-fill;
     border-radius: 4px;
-    padding-left: 32px;
-    padding-top: 17.7px;
-    padding-right: 14.2px;
-    padding-bottom: 14.2px;
+    display: flex;
+    place-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-bottom: 30px;
   }
 
   &__logo:hover {
@@ -36,5 +42,27 @@
     fill: $higlight;
     border-color: $higlight;
     transition: $trans;
+  }
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 1200px) {
+  .clients-title {
+    font-size: 36px;
+    line-height: 1.172;
+    letter-spacing: 0.03em;
+    margin-left: 495px;
+    margin-bottom: 50px;
+  }
+
+  .clients-list {
+    &__logo {
+      width: 170px;
+      height: 90px;
+      padding-left: 32px;
+      padding-top: 17.7px;
+      padding-right: 14.2px;
+      padding-bottom: 14.2px;
+    }
   }
 }

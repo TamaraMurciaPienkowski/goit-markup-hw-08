@@ -62,8 +62,8 @@
 
 .mobile-lists {
   padding: 0;
-  margin-bottom: auto;
   list-style: none;
+  margin-left: 40px;
 }
 .mobile-list {
   @extend.mobile-lists;
@@ -85,7 +85,8 @@
 
 .mobile-contact {
   @extend.mobile-lists;
-  margin-bottom: 64px;
+  position: absolute;
+  bottom: 134px;
   &__tel {
     text-decoration: none;
     display: block;
@@ -116,6 +117,8 @@
 .mobile-socials {
   @extend.mobile-lists;
   display: flex;
+  position: absolute;
+  bottom: 48px;
   &__item {
     text-decoration: none;
     display: inline;

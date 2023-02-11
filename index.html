@@ -23,53 +23,61 @@
   </head>
   <body>
     <!-- header -->
-    <header class="header-border container">
-      <nav class="main-nav">
-        <a class="logo" href="index.html"
-          ><span class="logo logo--blue">Web</span><span>Studio</span></a
-        >
-        <ul class="main-nav__links">
-          <li>
-            <a class="main-nav__link main-nav__link--active" href="index.html">Agencja</a>
-          </li>
-          <li>
-            <a class="main-nav__link" href="portfolio.html">Portfolio</a>
-          </li>
-          <li><a class="main-nav__link" href="#">Kontakt</a></li>
-        </ul>
-      </nav>
-      <ul class="contact-links">
-        <li class="contact-links__item">
-          <svg class="contact-links__icon" width="16px" height="12px">
-            <use href="./images/icons.svg#icon-envelope"></use>
-          </svg>
-          <a class="contact-links__link" href="mailto:info@devstidio.com">info@devstudio.com</a>
-        </li>
-        <li class="contact-links__item">
-          <svg class="contact-links__icon" width="10px" height="16px">
-            <use href="./images/icons.svg#icon-smartphone"></use>
-          </svg>
-          <a class="contact-links__link" href="tel:+48111111111">+48 111 111 111</a>
-        </li>
-      </ul>
-      <!-- burger button -->
-      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-        <svg
-          width="24"
-          height="24"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <!-- burger button end -->
-    </header>
+    <section>
+      <div class="container">
+        <header class="header-border">
+          <nav class="main-nav">
+            <a class="logo" href="index.html"
+              ><span class="logo logo--blue">Web</span><span>Studio</span></a
+            >
+            <ul class="main-nav__links">
+              <li>
+                <a class="main-nav__link main-nav__link--active" href="index.html">Agencja</a>
+              </li>
+              <li>
+                <a class="main-nav__link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li><a class="main-nav__link" href="#">Kontakt</a></li>
+            </ul>
+          </nav>
+          <ul class="contact-links">
+            <li class="contact-links__item">
+              <svg class="contact-links__icon" width="16px" height="12px">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              <a class="contact-links__link" href="mailto:info@devstidio.com">info@devstudio.com</a>
+            </li>
+            <li class="contact-links__item">
+              <svg class="contact-links__icon" width="10px" height="16px">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              <a class="contact-links__link" href="tel:+48111111111">+48 111 111 111</a>
+            </li>
+          </ul>
+          <!-- burger button -->
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <!-- burger button end -->
+        </header>
+      </div>
+    </section>
 
     <!-- header end -->
 
@@ -77,341 +85,353 @@
 
     <main>
       <!-- main title -->
-      <section class="main-title section container">
-        <div>
+      <section>
+        <div class="main-title">
           <h1 class="main-title__slogan">efektywne rozwiązania dla waszego biznesu</h1>
           <button data-modal-open type="button" class="main-button">Zamów usługę</button>
         </div>
       </section>
       <!-- advantages -->
-      <section class="section container">
-        <div>
-          <ul class="adventages">
-            <li class="adventages-item">
-              <svg class="adventages-item__icon">
-                <use href="./images/icons.svg#icon-antenna"></use>
-              </svg>
-              <h3 class="adventages-item__title">LOREM IPSUM</h3>
-              <p class="adventages-item__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
-                sodales dui. Interdum et malesuada
-              </p>
-            </li>
-            <li class="adventages-item">
-              <svg class="adventages-item__icon">
-                <use height="70px" width="70px" href="./images/icons.svg#icon-clock"></use>
-              </svg>
-              <h3 class="adventages-item__title">LOREM IPSUM</h3>
-              <p class="adventages-item__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
-                sodales dui. Interdum et malesuada
-              </p>
-            </li>
-            <li class="adventages-item">
-              <svg class="adventages-item__icon">
-                <use href="./images/icons.svg#icon-diagram"></use>
-              </svg>
-              <h3 class="adventages-item__title">LOREM IPSUM</h3>
-              <p class="adventages-item__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
-                sodales dui. Interdum et malesuada
-              </p>
-            </li>
-            <li class="adventages-item">
-              <svg class="adventages-item__icon">
-                <use href="./images/icons.svg#icon-astronaut"></use>
-              </svg>
-              <h3 class="adventages-item__title">LOREM IPSUM</h3>
-              <p class="adventages-item__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
-                sodales dui. Interdum et malesuada
-              </p>
-            </li>
-          </ul>
+      <section>
+        <div class="container">
+          <div class="advantages">
+            <ul class="advantages-list">
+              <li class="advantages-list__item">
+                <svg class="advantages-list__icon" height="120px" width="120px">
+                  <use href="./images/icons.svg#icon-antenna"></use>
+                </svg>
+                <h3 class="advantages-list__title">LOREM IPSUM</h3>
+                <p class="advantages-list__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
+                  sodales dui. Interdum et malesuada
+                </p>
+              </li>
+              <li class="advantages-list__item">
+                <svg class="advantages-list__icon" height="120px" width="120px">
+                  <use href="./images/icons.svg#icon-clock"></use>
+                </svg>
+                <h3 class="advantages-list__title">LOREM IPSUM</h3>
+                <p class="advantages-list__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
+                  sodales dui. Interdum et malesuada
+                </p>
+              </li>
+              <li class="advantages-list__item">
+                <svg class="advantages-list__icon" height="120px" width="120px">
+                  <use href="./images/icons.svg#icon-diagram"></use>
+                </svg>
+                <h3 class="advantages-list__title">LOREM IPSUM</h3>
+                <p class="advantages-list__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
+                  sodales dui. Interdum et malesuada
+                </p>
+              </li>
+              <li class="advantages-list__item">
+                <svg class="advantages-list__icon" height="120px" width="120px">
+                  <use href="./images/icons.svg#icon-astronaut"></use>
+                </svg>
+                <h3 class="advantages-list__title">LOREM IPSUM</h3>
+                <p class="advantages-list__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
+                  sodales dui. Interdum et malesuada
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-          <!-- what do we do -->
-
-          <h2 class="offer">Czym się zajmujemy</h2>
-          <ul class="offer-list">
-            <li class="offer-list__item">
-              <!-- 1 card -->
-              <img
-                width="370px"
-                height="294px"
-                src="images/advantages/boxone.jpg"
-                alt="photo of a person typing on a keyboard"
-              />
-              <h3 class="offer-list__title">Aplikacje komputerowe</h3>
-            </li>
-            <!-- card 2 -->
-            <li class="offer-list__item">
-              <img
-                width="370px"
-                height="294px"
-                src="images/advantages/boxtwo.jpg"
-                alt="a person holding a mobile phone and searching for mobile phones on a laptop"
-              />
-              <h3 class="offer-list__title">Aplikacje mobilne</h3>
-            </li>
-            <!-- card 3 -->
-            <li class="offer-list__item">
-              <img
-                width="370px"
-                height="294px"
-                src="images/advantages/boxthree.jpg"
-                alt="a person choosing colors on a tablet"
-              />
-              <h3 class="offer-list__title">Rozwiązania graficzne</h3>
-            </li>
-          </ul>
+      <!-- what do we do -->
+      <section>
+        <div class="container">
+          <div>
+            <h2 class="offer">Czym się zajmujemy</h2>
+            <ul class="offer-list">
+              <li class="offer-list__item">
+                <!-- 1 card -->
+                <img
+                  width="370px"
+                  height="294px"
+                  src="images/advantages/boxone.jpg"
+                  alt="photo of a person typing on a keyboard"
+                />
+                <h3 class="offer-list__title">Aplikacje komputerowe</h3>
+              </li>
+              <!-- card 2 -->
+              <li class="offer-list__item">
+                <img
+                  width="370px"
+                  height="294px"
+                  src="images/advantages/boxtwo.jpg"
+                  alt="a person holding a mobile phone and searching for mobile phones on a laptop"
+                />
+                <h3 class="offer-list__title">Aplikacje mobilne</h3>
+              </li>
+              <!-- card 3 -->
+              <li class="offer-list__item">
+                <img
+                  width="370px"
+                  height="294px"
+                  src="images/advantages/boxthree.jpg"
+                  alt="a person choosing colors on a tablet"
+                />
+                <h3 class="offer-list__title">Rozwiązania graficzne</h3>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <!-- our team -->
 
-      <section class="team section container">
+      <section class="team">
         <div>
-          <h2 class="team__title">Nasz zespół</h2>
-          <ul class="team-list">
-            <!-- 1 Card -->
-            <li class="team-list__item">
-              <figure>
-                <img
-                  class="photo-people__img"
-                  src="images/team/teammember1desk@1x.jpg"
-                  alt="John Doe"
-                  srcset="
-                    images/team/teammember1desk@1x.jpg 270w,
-                    images/team/teammember1desk@2x.jpg 540w,
-                    images/team/teammember1tab@1x.jpg  354w,
-                    images/team/teammember1tab@2x.jpg  708w,
-                    images/team/teammember1mob@1x.jpg  450w,
-                    images/team/teammember1mob@2x.jpg  900w
-                  "
-                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 320px) 450px, 98vw"
-                />
-                <!-- width="270"
+          <div class="team-container">
+            <h2 class="team__title">Nasz zespół</h2>
+            <ul class="team-list">
+              <!-- 1 Card -->
+              <li class="team-list__item">
+                <figure class="team-list__figure">
+                  <img
+                    class="team-list__img"
+                    src="images/team/teammember1desk@1x.jpg"
+                    alt="John Doe"
+                    srcset="
+                      images/team/teammember1desk@1x.jpg 270w,
+                      images/team/teammember1desk@2x.jpg 540w,
+                      images/team/teammember1tab@1x.jpg  354w,
+                      images/team/teammember1tab@2x.jpg  708w,
+                      images/team/teammember1mob@1x.jpg  450w,
+                      images/team/teammember1mob@2x.jpg  900w
+                    "
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 320px) 450px, 98vw"
+                  />
+                  <!-- width="270"
                 height="260" -->
-                <figcaption>
-                  <h3 class="team-list__item-name">John Doe</h3>
-                  <span class="team-list__item-role">Product Designer</span>
-                </figcaption>
-                <ul class="social-media-list">
-                  <li class="social-media-list__item">
-                    <svg class="social-media-list__icon" width="20px" height="20px">
-                      <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
-                  </li>
-                  <li class="social-media-list__item">
-                    <svg class="social-media-list__icon" width="20px" height="20px">
-                      <use href="./images/icons.svg#icon-twitter"></use>
-                    </svg>
-                  </li>
-                  <li class="social-media-list__item">
-                    <svg class="social-media-list__icon" width="20px" height="20px">
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                  </li>
-                  <li class="social-media-list__item">
-                    <svg class="social-media-list__icon" width="20px" height="20px">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
-                  </li>
-                </ul>
-              </figure>
-            </li>
-            <!-- 2 Card -->
-            <li class="team-list__item">
-              <figure>
-                <img
-                  class="photo-people__img"
-                  src="images/team/teammember2desk@1x.jpg"
-                  alt="John Doe"
-                  srcset="
-                    images/team/teammember2desk@1x.jpg 270w,
-                    images/team/teammember2desk@2x.jpg 540w,
-                    images/team/teammember2tab@1x.jpg  354w,
-                    images/team/teammember2tab@2x.jpg  708w,
-                    images/team/teammember2mob@1x.jpg  450w,
-                    images/team/teammember2mob@2x.jpg  900w
-                  "
-                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 320px) 450px, 98vw"
-                />
-                <!-- width="270"
+                  <figcaption>
+                    <h3 class="team-list__item-name">John Doe</h3>
+                    <span class="team-list__item-role">Product Designer</span>
+                  </figcaption>
+                  <ul class="social-media-list">
+                    <li class="social-media-list__item">
+                      <svg class="social-media-list__icon" width="20px" height="20px">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </li>
+                    <li class="social-media-list__item">
+                      <svg class="social-media-list__icon" width="20px" height="20px">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </li>
+                    <li class="social-media-list__item">
+                      <svg class="social-media-list__icon" width="20px" height="20px">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </li>
+                    <li class="social-media-list__item">
+                      <svg class="social-media-list__icon" width="20px" height="20px">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </figure>
+              </li>
+              <!-- 2 Card -->
+              <li class="team-list__item">
+                <figure class="team-list__figure">
+                  <img
+                    class="team-list__img"
+                    src="images/team/teammember2desk@1x.jpg"
+                    alt="John Doe"
+                    srcset="
+                      images/team/teammember2desk@1x.jpg 270w,
+                      images/team/teammember2desk@2x.jpg 540w,
+                      images/team/teammember2tab@1x.jpg  354w,
+                      images/team/teammember2tab@2x.jpg  708w,
+                      images/team/teammember2mob@1x.jpg  450w,
+                      images/team/teammember2mob@2x.jpg  900w
+                    "
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 320px) 450px, 98vw"
+                  />
+                  <!-- width="270"
                 height="260" -->
-                <figcaption>
-                  <h3 class="team-list__item-name">John Doe</h3>
-                  <span class="team-list__item-role">Product Designer</span>
-                </figcaption>
-                <ul class="social-media-list">
-                  <li class="social-media-list__item">
-                    <svg class="social-media-list__icon" width="20px" height="20px">
-                      <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
-                  </li>
-                  <li class="social-media-list__item">
-                    <svg class="social-media-list__icon" width="20px" height="20px">
-                      <use href="./images/icons.svg#icon-twitter"></use>
-                    </svg>
-                  </li>
-                  <li class="social-media-list__item">
-                    <svg class="social-media-list__icon" width="20px" height="20px">
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                  </li>
-                  <li class="social-media-list__item">
-                    <svg class="social-media-list__icon" width="20px" height="20px">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
-                  </li>
-                </ul>
-              </figure>
-            </li>
-            <!-- 3 card -->
-            <li class="team-list__item">
-              <figure>
-                <img
-                  class="photo-people__img"
-                  src="images/team/teammember3desk@1x.jpg"
-                  alt="John Doe"
-                  srcset="
-                    images/team/teammember3desk@1x.jpg 270w,
-                    images/team/teammember3desk@2x.jpg 540w,
-                    images/team/teammember3tab@1x.jpg  354w,
-                    images/team/teammember3tab@2x.jpg  708w,
-                    images/team/teammember3mob@1x.jpg  450w,
-                    images/team/teammember3mob@2x.jpg  900w
-                  "
-                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 320px) 450px, 98vw"
-                />
-                <!-- width="270"
+                  <figcaption>
+                    <h3 class="team-list__item-name">John Doe</h3>
+                    <span class="team-list__item-role">Product Designer</span>
+                  </figcaption>
+                  <ul class="social-media-list">
+                    <li class="social-media-list__item">
+                      <svg class="social-media-list__icon" width="20px" height="20px">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </li>
+                    <li class="social-media-list__item">
+                      <svg class="social-media-list__icon" width="20px" height="20px">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </li>
+                    <li class="social-media-list__item">
+                      <svg class="social-media-list__icon" width="20px" height="20px">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </li>
+                    <li class="social-media-list__item">
+                      <svg class="social-media-list__icon" width="20px" height="20px">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </figure>
+              </li>
+              <!-- 3 card -->
+              <li class="team-list__item">
+                <figure class="team-list__figure">
+                  <img
+                    class="team-list__img"
+                    src="images/team/teammember3desk@1x.jpg"
+                    alt="John Doe"
+                    srcset="
+                      images/team/teammember3desk@1x.jpg 270w,
+                      images/team/teammember3desk@2x.jpg 540w,
+                      images/team/teammember3tab@1x.jpg  354w,
+                      images/team/teammember3tab@2x.jpg  708w,
+                      images/team/teammember3mob@1x.jpg  450w,
+                      images/team/teammember3mob@2x.jpg  900w
+                    "
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 320px) 450px, 98vw"
+                  />
+                  <!-- width="270"
                 height="260" -->
-                <figcaption>
-                  <h3 class="team-list__item-name">John Doe</h3>
-                  <span class="team-list__item-role">Product Designer</span>
-                </figcaption>
-                <ul class="social-media-list">
-                  <li class="social-media-list__item">
-                    <svg class="social-media-list__icon" width="20px" height="20px">
-                      <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
-                  </li>
-                  <li class="social-media-list__item">
-                    <svg class="social-media-list__icon" width="20px" height="20px">
-                      <use href="./images/icons.svg#icon-twitter"></use>
-                    </svg>
-                  </li>
-                  <li class="social-media-list__item">
-                    <svg class="social-media-list__icon" width="20px" height="20px">
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                  </li>
-                  <li class="social-media-list__item">
-                    <svg class="social-media-list__icon" width="20px" height="20px">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
-                  </li>
-                </ul>
-              </figure>
-            </li>
-            <!-- 4 card -->
-            <li class="team-list__item">
-              <figure>
-                <img
-                  class="photo-people__img"
-                  src="images/team/teammember4desk@1x.jpg"
-                  alt="John Doe"
-                  srcset="
-                    images/team/teammember4desk@1x.jpg 270w,
-                    images/team/teammember4desk@2x.jpg 540w,
-                    images/team/teammember4tab@1x.jpg  354w,
-                    images/team/teammember4tab@2x.jpg  708w,
-                    images/team/teammember4mob@1x.jpg  450w,
-                    images/team/teammember4mob@2x.jpg  900w
-                  "
-                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 320px) 450px, 98vw"
-                />
-                <!-- width="270"
+                  <figcaption>
+                    <h3 class="team-list__item-name">John Doe</h3>
+                    <span class="team-list__item-role">Product Designer</span>
+                  </figcaption>
+                  <ul class="social-media-list">
+                    <li class="social-media-list__item">
+                      <svg class="social-media-list__icon" width="20px" height="20px">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </li>
+                    <li class="social-media-list__item">
+                      <svg class="social-media-list__icon" width="20px" height="20px">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </li>
+                    <li class="social-media-list__item">
+                      <svg class="social-media-list__icon" width="20px" height="20px">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </li>
+                    <li class="social-media-list__item">
+                      <svg class="social-media-list__icon" width="20px" height="20px">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </figure>
+              </li>
+              <!-- 4 card -->
+              <li class="team-list__item">
+                <figure class="team-list__figure">
+                  <img
+                    class="team-list__img"
+                    src="images/team/teammember4desk@1x.jpg"
+                    alt="John Doe"
+                    srcset="
+                      images/team/teammember4desk@1x.jpg 270w,
+                      images/team/teammember4desk@2x.jpg 540w,
+                      images/team/teammember4tab@1x.jpg  354w,
+                      images/team/teammember4tab@2x.jpg  708w,
+                      images/team/teammember4mob@1x.jpg  450w,
+                      images/team/teammember4mob@2x.jpg  900w
+                    "
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 320px) 450px, 98vw"
+                  />
+                  <!-- width="270"
                 height="260" -->
-                <figcaption>
-                  <h3 class="team-list__item-name">John Doe</h3>
-                  <span class="team-list__item-role">Product Designer</span>
-                </figcaption>
-                <ul class="social-media-list">
-                  <li class="social-media-list__item">
-                    <svg class="social-media-list__icon" width="20px" height="20px">
-                      <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
-                  </li>
-                  <li class="social-media-list__item">
-                    <svg class="social-media-list__icon" width="20px" height="20px">
-                      <use href="./images/icons.svg#icon-twitter"></use>
-                    </svg>
-                  </li>
-                  <li class="social-media-list__item">
-                    <svg class="social-media-list__icon" width="20px" height="20px">
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                  </li>
-                  <li class="social-media-list__item">
-                    <svg class="social-media-list__icon" width="20px" height="20px">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
-                  </li>
-                </ul>
-              </figure>
-            </li>
-          </ul>
+                  <figcaption>
+                    <h3 class="team-list__item-name">John Doe</h3>
+                    <span class="team-list__item-role">Product Designer</span>
+                  </figcaption>
+                  <ul class="social-media-list">
+                    <li class="social-media-list__item">
+                      <svg class="social-media-list__icon" width="20px" height="20px">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </li>
+                    <li class="social-media-list__item">
+                      <svg class="social-media-list__icon" width="20px" height="20px">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </li>
+                    <li class="social-media-list__item">
+                      <svg class="social-media-list__icon" width="20px" height="20px">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </li>
+                    <li class="social-media-list__item">
+                      <svg class="social-media-list__icon" width="20px" height="20px">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- our team end -->
+      <!-- our clients -->
+      <section>
+        <div class="container">
+          <div class="clients">
+            <h2 class="clients-title">Nasi klienci</h2>
+            <ul class="clients-list">
+              <!-- client 1 -->
+              <li class="clientslist_item">
+                <svg width="170" height="90" class="clients-list__logo">
+                  <use href="./images/icons.svg#icon-logo1"></use>
+                </svg>
+              </li>
+              <!-- client 2 -->
+              <li class="clients-list__item">
+                <svg width="170" height="90" class="clients-list__logo">
+                  <use href="./images/icons.svg#icon-logo2"></use>
+                </svg>
+              </li>
+              <!-- client 3 -->
+              <li class="clients-list__item">
+                <svg width="170" height="90" class="clients-list__logo">
+                  <use href="./images/icons.svg#icon-logo3"></use>
+                </svg>
+              </li>
+              <!-- client 4 -->
+              <li class="clients-list__item">
+                <svg width="170" height="90" class="clients-list__logo">
+                  <use href="./images/icons.svg#icon-logo4"></use>
+                </svg>
+              </li>
+              <!-- client 5 -->
+              <li class="clients-list__item">
+                <svg width="170" height="90" class="clients-list__logo">
+                  <use href="./images/icons.svg#icon-logo5"></use>
+                </svg>
+              </li>
+              <!-- client 6 -->
+              <li class="clients-list__item">
+                <svg width="170" height="90" class="clients-list__logo">
+                  <use href="./images/icons.svg#icon-logo6"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
-    <!-- our team end -->
-    <!-- our clients -->
-    <section class="section container">
-      <div>
-        <h2 class="clients-title">Nasi klienci</h2>
-        <ul class="clients-list">
-          <!-- client 1 -->
-          <li class="clientslist_item">
-            <svg class="clients-list__logo">
-              <use width="106px" height="60px" href="./images/icons.svg#icon-logo1"></use>
-            </svg>
-          </li>
-          <!-- client 2 -->
-          <li class="clients-list__item">
-            <svg class="clients-list__logo">
-              <use width="106px" height="60px" href="./images/icons.svg#icon-logo2"></use>
-            </svg>
-          </li>
-          <!-- client 3 -->
-          <li class="clients-list__item">
-            <svg class="clients-list__logo">
-              <use width="106px" height="60px" href="./images/icons.svg#icon-logo3"></use>
-            </svg>
-          </li>
-          <!-- client 4 -->
-          <li class="clients-list__item">
-            <svg class="clients-list__logo">
-              <use width="106px" height="60px" href="./images/icons.svg#icon-logo4"></use>
-            </svg>
-          </li>
-          <li class="clients-list__item">
-            <svg class="clients-list__logo">
-              <use width="106px" height="60px" href="./images/icons.svg#icon-logo5"></use>
-            </svg>
-          </li>
-          <!-- client 5 -->
-          <li class="clients-list__item">
-            <svg class="clients-list__logo">
-              <use width="106px" height="60px" href="./images/icons.svg#icon-logo6"></use>
-            </svg>
-          </li>
-        </ul>
-      </div>
-    </section>
     <!-- footer -->
-    <footer class="footnote container">
-      <div class="footnote-organizer">
+    <footer class="footnote">
+      <section>
         <div class="fleft">
           <a class="logo logo--blue" href="index.html"
             ><span>Web</span><span class="logo logo--white">Studio</span>
@@ -453,31 +473,25 @@
             </li>
           </ul>
         </div>
-        <div>
-          <form class="newsletter">
-            <div>
-              <label class="newsletter__label fmiddle__title" for="nlemail"
-                >Zapisz się do newslettera
-                <input
-                  class="newsletter__input"
-                  type="email"
-                  name="email"
-                  placeholder="E-mail"
-                  id="nlemail"
-                />
-              </label>
-            </div>
-            <div>
-              <button type="button" class="newsletter-button">
-                Zapisz się
-                <svg class="newsletter-button__icon" width="24px" height="24px">
-                  <use href="./images/icons.svg#icon-send"></use>
-                </svg>
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
+        <form class="newsletter">
+          <label class="newsletter__label fmiddle__title" for="nlemail"
+            >Zapisz się do newslettera
+            <input
+              class="newsletter__input"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              id="nlemail"
+            />
+          </label>
+          <button type="button" class="newsletter-button">
+            Zapisz się
+            <svg class="newsletter-button__icon" width="24px" height="24px">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
+      </section>
     </footer>
     <!-- end of footer -->
     <!-- modal and backdrop -->
