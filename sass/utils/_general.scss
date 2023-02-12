@@ -1,39 +1,31 @@
 body {
   color: $main-color;
   font-family: 'Roboto', sans-serif;
-  max-width: 767px;
-  position: relative;
 }
 
 section {
+  margin: 0 auto;
+  padding: 0px;
   max-width: 767px;
 }
-.container {
+.box {
   margin: 0 auto;
   padding: 0;
   max-width: 480px;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  body {
-    max-width: 1199px;
-  }
   section {
     max-width: 1199px;
-    margin: 0 auto;
   }
-  .container {
-    max-width: 1199px;
+  .box {
+    max-width: 768px;
   }
 }
 @media (min-width: 1200px) {
   section {
     max-width: 1600px;
   }
-
-  body {
-    max-width: 1600px;
-  }
-  .container {
+  .box {
     max-width: 1200px;
   }
 }

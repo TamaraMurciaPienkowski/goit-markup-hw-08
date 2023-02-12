@@ -123,11 +123,17 @@
   }
   .footnote-organizer {
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .footer-tablet {
+    gap: 0px;
     max-width: 1200px;
+    justify-content: space-evenly;
   }
   .fleft {
     text-align: left;
-    margin: 0px;
+    margin-right: 70px;
   }
   .fmiddle {
     margin: 0px;

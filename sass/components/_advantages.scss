@@ -51,12 +51,14 @@
 @media (min-width: 768px) {
   .advantages {
     margin-bottom: 90px;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .advantages-list {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: space-evenly;
     text-align: left;
     gap: 30px;
