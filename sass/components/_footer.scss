@@ -74,17 +74,15 @@
 
 .newsletter {
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
+  flex-wrap: wrap;
   margin: 0px;
   padding: 0px;
+  justify-content: center;
 
   &__label {
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   &__input {
@@ -111,8 +109,11 @@
     gap: 144px;
   }
   .newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     &__input {
-      width: 60%;
+      width: 90%;
     }
   }
 }
@@ -146,16 +147,9 @@
     }
   }
   .newsletter {
-    align-items: flex-start;
-    padding-top: 8px;
-    display: flex;
-    flex-direction: row;
     &__label {
-      align-items: flex-start;
       padding: 0px;
-    }
-    &__input {
-      margin-top: 20px;
+      justify-content: left;
       width: 358px;
     }
   }

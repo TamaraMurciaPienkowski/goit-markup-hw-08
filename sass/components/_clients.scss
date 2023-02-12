@@ -35,13 +35,23 @@
   }
   &__item:hover {
     border: 1px solid $higlight;
+    transition: $trans;
   }
 
   &__item:focus {
     border: 1px solid $higlight;
+    transition: $trans;
   }
-
+  &__item:hover &__logo {
+    transition: $trans;
+    fill: $higlight;
+  }
+  &__item:focus &__logo {
+    transition: $trans;
+    fill: $higlight;
+  }
   &__logo:hover {
+    transition: $trans;
     fill: $higlight;
     cursor: pointer;
   }

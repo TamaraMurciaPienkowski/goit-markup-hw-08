@@ -32,17 +32,13 @@
 }
 .newsletter-button {
   @extend.button-mobi;
-  position: relative;
+  display: flex;
+  gap: 24px;
+  align-items: center;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-right: 42px;
+  padding-left: 42px;
   width: 200px;
-  &__icon {
-    position: absolute;
-    left: 148px;
-    top: 13px;
-    bottom: 13px;
-  }
 }
 
 .tac-button {
@@ -72,13 +68,6 @@
   .main-button {
     @extend.button-desk;
     margin-bottom: 106px;
-  }
-  .newsletter-button {
-    @extend.button-desk;
-    padding-top: 9px;
-    padding-bottom: 10px;
-    padding-right: 70px;
-    margin-top: 37px;
   }
 }
 .tac-button {
