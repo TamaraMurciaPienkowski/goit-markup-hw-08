@@ -1,5 +1,4 @@
 .clients {
-  max-width: 480px;
   margin-bottom: 30px;
 }
 .clients-title {
@@ -8,65 +7,64 @@
   text-decoration: none;
   font-weight: 700;
   font-size: 28px;
-  line-height: calc (32.818px / 28px);
+  line-height: calc(32.818px / 28px);
   letter-spacing: 0.03em;
 }
 
 .clients-list {
   list-style-type: none;
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   margin: 0px;
   padding: 0px;
-  justify-content: space-evenly;
-  &__logo {
-    fill: $icons-fill;
-    width: 210px;
+  gap: 30px;
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 92px;
+    width: 210px;
+    outline: none;
     border: solid 1px $icons-fill;
     border-radius: 4px;
-    display: flex;
-    place-items: center;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    margin-bottom: 30px;
+  }
+  &__logo {
+    fill: $icons-fill;
+    transition: $trans;
+  }
+  &__item:hover {
+    border: 1px solid $higlight;
+  }
+
+  &__item:focus {
+    border: 1px solid $higlight;
   }
 
   &__logo:hover {
     fill: $higlight;
-    border-color: $higlight;
-    transition: $trans;
     cursor: pointer;
   }
 
   &__logo:focus {
     fill: $higlight;
-    border-color: $higlight;
     transition: $trans;
+    border-color: $higlight;
   }
 }
 @media (min-width: 768px) {
-  .clients {
-    max-width: 768px;
-  }
   .clients-list {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    gap: 15px;
-    &__logo {
-      width: 106px;
-      height: 60px;
-      padding-left: 75px;
-      padding-top: 16px;
-      padding-right: 75px;
-      padding-bottom: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    &__item {
+      width: 226px;
     }
   }
 }
+
 @media (min-width: 1200px) {
   .clients {
-    max-width: 1200px;
     margin-bottom: 90px;
   }
   .clients-title {
@@ -75,14 +73,9 @@
     letter-spacing: 0.03em;
     margin-bottom: 50px;
   }
-}
-.clients-list {
-  &__logo {
-    width: 170px;
-    height: 90px;
-    padding-left: 32px;
-    padding-top: 17.7px;
-    padding-right: 14.2px;
-    padding-bottom: 14.2px;
+  .clients-list {
+    &__item {
+      width: 170px;
+    }
   }
 }

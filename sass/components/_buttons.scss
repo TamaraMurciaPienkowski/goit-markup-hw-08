@@ -77,10 +77,10 @@
     @extend.button-desk;
     padding-top: 9px;
     padding-bottom: 10px;
-    padding-right: 42px;
+    padding-right: 70px;
     margin-top: 37px;
   }
-  .tac-button {
-    @extend.button-desk;
-  }
+}
+.tac-button {
+  @extend.button-desk;
 }
