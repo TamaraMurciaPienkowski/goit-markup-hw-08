@@ -50,8 +50,6 @@
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 @media (min-width: 768px) {
-  .newsletter-button {
-  }
 }
 @media (min-width: 1200px) {
   .button-desk {
@@ -71,7 +69,10 @@
     @extend.button-desk;
     margin-bottom: 106px;
   }
-}
-.tac-button {
-  @extend.button-desk;
+  .tac-button {
+    @extend.button-desk;
+  }
+  .newsletter-button {
+    margin-top: 40px;
+  }
 }
