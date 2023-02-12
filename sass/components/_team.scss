@@ -13,7 +13,7 @@
     text-decoration: none;
     font-weight: 700;
     font-size: 28px;
-    line-height: calc (28px / 32.81px);
+    line-height: calc (32.81px / 28px);
     letter-spacing: 0.03em;
     text-align: center;
     margin-bottom: 30px;
@@ -69,40 +69,37 @@
   }
 }
 @media (min-width: 768px) {
-}
-@media (min-width: 1200px) {
   .team {
-    &__title {
-      font-size: 36px;
-      line-height: 1.172;
-      letter-spacing: 0.03em;
-      margin-left: 495px;
-      margin-bottom: 50px;
+    .team-list {
+      max-width: 768px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-evenly;
+      gap: 30px;
     }
   }
-
-  .team-list {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-
-    &__item {
-      width: 270px;
+  @media (min-width: 1200px) {
+    .team {
+      margin-bottom: 90px;
+      padding-top: 64px;
+      &__title {
+        font-size: 36px;
+        line-height: 1.172;
+        margin-bottom: 50px;
+      }
     }
 
-    &__item-name {
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 1.171;
-      letter-spacing: 0.03em;
-      margin-top: 30px;
-      margin-bottom: 10px;
-    }
+    .team-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 30px;
+      text-align: center;
 
-    &__item-role {
-      font-size: 16px;
-      line-height: 1.171;
-      letter-spacing: 0.03em;
+      &__item {
+        width: 270px;
+      }
     }
   }
 }

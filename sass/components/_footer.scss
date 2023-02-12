@@ -101,102 +101,48 @@
   }
 }
 @media (min-width: 768px) {
+  .footnote-organizer {
+    max-width: 1199px;
+  }
+  .footer-tablet {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 144px;
+  }
+  .newsletter {
+    &__input {
+      width: 60%;
+    }
+  }
 }
 @media (min-width: 1200px) {
   .footnote {
-    background-color: $background-dark;
+    display: flex;
+    margin: 0px;
     padding-top: 60px;
-    padding-left: 15px;
-    padding-bottom: 60px;
-    &-organizer {
-      display: flex;
-    }
+  }
+  .footnote-organizer {
+    display: flex;
+    max-width: 1200px;
   }
   .fleft {
-    margin-bottom: 20px;
-    margin-right: 70px;
-  }
-
-  .fleft__contacts {
-    display: block;
-  }
-
-  .fleft-list {
-    list-style: none;
-    text-decoration: none;
-    &__text {
-      margin-top: 9px;
-      margin-bottom: 9px;
-      color: $contrast-color;
-      text-decoration: none;
-      font-style: normal;
-      font-size: 14px;
-      line-height: 1.714;
-      letter-spacing: 0.03em;
-    }
-    &__item {
-      margin-top: 9px;
-      margin-bottom: 9px;
-      color: rgba(255, 255, 255, 0.6);
-      text-decoration: none;
-      font-style: normal;
-      font-size: 14px;
-      line-height: 1.714;
-      letter-spacing: 0.03em;
-    }
-
-    &__item:hover {
-      color: $higlight;
-      transition: $trans;
-    }
-
-    &__item:focus {
-      color: $higlight;
-      transition: $trans;
-    }
+    text-align: left;
+    margin: 0px;
   }
   .fmiddle {
-    padding-top: 12px;
-    margin-right: 78px;
+    margin: 0px;
     &__title {
-      color: $contrast-color;
-      font-size: 16px;
-      font-weight: 700;
-      line-height: 16.41px;
-      text-transform: uppercase;
-      letter-spacing: 00.03em;
-      margin-bottom: 20px;
+      margin: 0px;
+      text-align: left;
     }
   }
-  .fmiddle-list {
-    list-style-type: none;
-    display: flex;
-    margin-bottom: 30px;
-    gap: 10px;
-  }
-
   .newsletter {
+    max-width: 570px;
     display: flex;
-    margin-top: 13px;
-
-    &__label {
-      display: flex;
-      flex-direction: column;
-    }
-
+    flex-direction: row;
+    text-align: left;
     &__input {
-      background-color: $background-dark;
-      color: rgba(255, 255, 255, 0.6);
-      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      border-radius: 4px;
       width: 358px;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      padding-left: 16px;
-      margin-top: 20px;
-      margin-right: 12px;
-      outline: none;
     }
   }
 }

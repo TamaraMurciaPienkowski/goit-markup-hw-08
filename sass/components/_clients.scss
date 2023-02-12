@@ -8,7 +8,7 @@
   text-decoration: none;
   font-weight: 700;
   font-size: 28px;
-  line-height: calc (28px / 32.81px);
+  line-height: calc (32.818px / 28px);
   letter-spacing: 0.03em;
 }
 
@@ -36,6 +36,7 @@
     fill: $higlight;
     border-color: $higlight;
     transition: $trans;
+    cursor: pointer;
   }
 
   &__logo:focus {
@@ -45,24 +46,43 @@
   }
 }
 @media (min-width: 768px) {
+  .clients {
+    max-width: 768px;
+  }
+  .clients-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 15px;
+    &__logo {
+      width: 106px;
+      height: 60px;
+      padding-left: 75px;
+      padding-top: 16px;
+      padding-right: 75px;
+      padding-bottom: 16px;
+    }
+  }
 }
 @media (min-width: 1200px) {
+  .clients {
+    max-width: 1200px;
+    margin-bottom: 90px;
+  }
   .clients-title {
     font-size: 36px;
     line-height: 1.172;
     letter-spacing: 0.03em;
-    margin-left: 495px;
     margin-bottom: 50px;
   }
-
-  .clients-list {
-    &__logo {
-      width: 170px;
-      height: 90px;
-      padding-left: 32px;
-      padding-top: 17.7px;
-      padding-right: 14.2px;
-      padding-bottom: 14.2px;
-    }
+}
+.clients-list {
+  &__logo {
+    width: 170px;
+    height: 90px;
+    padding-left: 32px;
+    padding-top: 17.7px;
+    padding-right: 14.2px;
+    padding-bottom: 14.2px;
   }
 }

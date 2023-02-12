@@ -14,15 +14,16 @@
     font-size: 36px;
     line-height: 1.172;
     letter-spacing: 0.03em;
-    margin-left: 424px;
-    margin-bottom: 50px;
+    margin-bottom: 90px;
   }
 
   .offer-list {
     list-style-type: none;
-    padding-top: 50px;
+    margin: 0px;
+    padding: 0px;
     display: flex;
     justify-content: space-evenly;
+    gap: 30px;
 
     &__item {
       display: inline;
@@ -30,7 +31,7 @@
 
     &__title {
       position: relative;
-      bottom: 74px;
+      bottom: 90px;
       text-transform: uppercase;
       text-align: center;
       font-weight: 700;

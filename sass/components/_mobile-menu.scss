@@ -137,3 +137,9 @@
     border-right: none;
   }
 }
+
+@media (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
+}

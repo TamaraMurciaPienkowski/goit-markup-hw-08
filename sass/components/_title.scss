@@ -24,29 +24,41 @@
     text-align: center;
     font-weight: 900;
     font-size: 26px;
-    line-height: calc (26px / 42px);
+    line-height: calc (42px / 26px);
     letter-spacing: 0.06em;
     margin-bottom: 30px;
     color: $contrast-color;
     margin-bottom: 30px;
+    max-width: 365px;
   }
 }
 @media (min-width: 768px) {
   .main-title {
     width: 100%;
     height: auto;
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/background/backgroundtab@1x.jpg');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/background/backgroundtab@2x.jpg');
+    }
+    &__slogan {
+      font-size: 26px;
+      line-height: calc(42px / 26px);
+      margin-bottom: 30px;
+    }
   }
 }
 @media (min-width: 1200px) {
   .main-title {
+    margin-bottom: 90px;
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../images/background/background.jpg');
-
+      url('../images/background/backgrounddesk@1x.jpg');
     &__slogan {
       font-size: 44px;
       line-height: 1.36;
       margin-bottom: 40px;
-      margin-top: 106px;
+      margin-top: 100px;
+      max-width: 696px;
     }
   }
 }
