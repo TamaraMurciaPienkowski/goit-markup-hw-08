@@ -121,12 +121,10 @@
   .footnote {
     display: flex;
     margin: 0px;
-    padding-top: 60px;
   }
   .footnote-organizer {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
   }
   .footer-tablet {
     gap: 0px;
@@ -147,6 +145,7 @@
     }
   }
   .newsletter {
+    flex-direction: row;
     &__label {
       padding: 0px;
       justify-content: left;
